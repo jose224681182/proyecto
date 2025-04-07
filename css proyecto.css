@@ -1,39 +1,81 @@
-/* estilos.css */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+/* Reset básico */
+* {
     margin: 0;
-    padding: 20px;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  h1 {
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 30px;
+  /* Fondo y tipografía */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    color: #2e2e2e;
+    padding: 2rem;
   }
   
+  /* Contenedor principal */
   .container {
-    background-color: white;
-    padding: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
   }
   
-  button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  /* Títulos */
+  h1 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #1e3c72;
+    display: inline-block;
   }
   
-  button:hover {
-    background-color: #2980b9;
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #3a3a3a;
+    border-left: 5px solid #1e3c72;
+    padding-left: 10px;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #555;
+  }
+  
+  /* Texto y listas */
+  p {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  ul {
+    margin: 1rem 0 1rem 1.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  li strong {
+    color: #1e3c72;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
   }
   
